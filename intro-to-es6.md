@@ -1,6 +1,7 @@
 **var**: 
 - overwrite variable declaration without an error
 	
+	
 	var hello = "Hello";
 	var hello = " World"; 
 	
@@ -62,6 +63,7 @@ reduce()
 	})
 
 **Arrow function**:
+
 	FBPosts.filter((post) => post.thumbnail !== null && post.shares > 100 && post.likes > 500)
 
 
@@ -91,6 +93,7 @@ ex:
 - to expand arras and other expressions in place
 - ex:
 
+
 	var arr = [6, 89, 3, 45];
 	var maximus = Math.max.apply(null, arr); // returns 89
 
@@ -108,7 +111,9 @@ Using spread operator:
 **Destructuring assignment to assign variables from objects**
 
 1.
-	var voxel = {x: 3.6, y: 7.4, z: 6.54 };
+
+
+    var voxel = {x: 3.6, y: 7.4, z: 6.54 };
 	var x = voxel.x; // x = 3.6
 	var y = voxel.y; // y = 7.4
 	var z = voxel.z; // z = 6.54
@@ -119,13 +124,16 @@ converts to
 
 2. Nested objects
 
+
 	const a = {
 	  start: { x: 5, y: 6},
 	  end: { x: 6, y: -9 }
 	};
+	
 	const { start : { x: startX, y: startY }} = a;
 
 3. Arrays
+
 
 	const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
 	console.log(a, b, c); // 1, 2, 5
@@ -138,7 +146,8 @@ converts to
 
 
 	const greeting = `Hello, my name is ${person.name}!
-I am ${person.age} years old.`;
+	
+    I am ${person.age} years old.`;
 
 
 **Object Literal Declaration**:
@@ -149,6 +158,7 @@ I am ${person.age} years old.`;
 **Declarative Functions with ES6**
 
 - ```function``` keyword is not required to define functions in objects
+
 
 	const person = {
   		name: "Taylor",
@@ -161,6 +171,7 @@ I am ${person.age} years old.`;
 
 - ```new``` keyword to instantiate an object
 - ex:
+
 
 	class SpaceShuttle {
 	  constructor(targetPlanet){
@@ -176,6 +187,7 @@ I am ${person.age} years old.`;
 
 - Setters modify (set) the value of an object's private variable based on the value passed into the setter function
 
+
 	const lol = new Book('anonymous');
 	console.log(lol.writer);  // anonymous
 	lol.writer = 'wut';
@@ -188,11 +200,11 @@ I am ${person.age} years old.`;
 		- to import functions and code in external files
 
 -- Import:
-	- import specific code/part of module 
-	- saves time and memory
-	- syntax: ```import { countItems } from "math_array_functions"```
+1. import specific code/part of module 
+1. saves time and memory
+1. syntax: ```import { countItems } from "math_array_functions"```
 
-Synatx to import a default export	```import add from "math_functions";```
+Syntax to import a default export	```import add from "math_functions";```
 
 **Export**		
 
@@ -201,6 +213,7 @@ Syntax:
 	export { capitalizeString } 
 	export const foo = "bar";
 or 
+
 	export { capitalizeString, foo }
 	
 Default export: 

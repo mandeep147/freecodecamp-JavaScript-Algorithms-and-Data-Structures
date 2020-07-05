@@ -35,7 +35,7 @@ $ : match chars at the end of string
     [ \r\t\f\n\v]
 \S : everything except whiteSpace [^ \r\t\f\n\v]
 ? : also, for optional chars
-
+() : mixed grouping of characters
   
 greedy match - finds longest part of string that fits regex pattern and returns it as match
 lazy match - finds smallest part that satisfies regex pattern

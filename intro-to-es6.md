@@ -107,6 +107,16 @@ Using spread operator:
 - only works in-place, like in an argument to a function or 
 - in an array literal, like arr2 = [...arr1];
 
+**Destructuring assignment to extract values from objects**
+    
+    const user = { name: 'John Doe', age: 34 };
+    const name = user.name; // name = 'John Doe'
+    const age = user.age; // age = 34
+
+   Here's an equivalent assignment statement using the ES6 destructuring syntax:
+
+    const { name, age } = user;
+    // name = 'John Doe', age = 34
 
 **Destructuring assignment to assign variables from objects**
 
@@ -223,25 +233,6 @@ Default export:
 - ```export default``` cannot be used with ```var```, ```let```, or ```const```
 
 
+**Create Module Script**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script type="module" src="index.js"></script>

@@ -11,6 +11,7 @@
 
  If either argument isn't a valid number, return undefined.
 
+ Test Cases:
  addTogether(2, 3) should return 5.
  addTogether(23, 30) should return 53.
  addTogether(5)(7) should return 12.

@@ -5,6 +5,17 @@
  * - If a word begins with a vowel, just add "way" at the end.
  *
  * Translate the provided string to Pig Latin. Input strings are guaranteed to be English words in all lowercase.
+ *
+ * Test Cases:
+
+ translatePigLatin("california") should return "aliforniacay".
+ translatePigLatin("paragraphs") should return "aragraphspay".
+ translatePigLatin("glove") should return "oveglay".
+ translatePigLatin("algorithm") should return "algorithmway".
+ translatePigLatin("eight") should return "eightway".
+ Should handle words where the first vowel comes in the middle of the word. translatePigLatin("schwartz") should return "artzschway".
+ Should handle words without vowels. translatePigLatin("rhythm") should return "rhythmay".
+
  * @param str
  * @returns {string}
  */

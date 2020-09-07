@@ -8,15 +8,19 @@
  * @param str
  * @returns {string}
  */
-function translatePigLatin(str) {
+function translatePigLatin(str, charPos = 0) {
     const vowel = ['a', 'e', 'i', 'o', 'u'];
-    if(vowel.indexOf(str.charAt(0)) !== -1) {
-        str += "w";
+    if(vowel.includes(str[0])) {
+        if (charPos === 0) {
+            return str +'way';
+        } else {
+            return str + 'ay';
+        }
+    } else if (charPos === str.length) {
+        return str + 'ay';
+    } else{
+        return translatePigLatin(str.slice(1) + str[0], charPos+1);
     }
-    while(vowel.indexOf(str.charAt(0)) === -1) {
-        str = str.substr(1) + str.charAt(0);
-    }
-    return str + "ay";
 }
 
 translatePigLatin("consonant");
